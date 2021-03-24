@@ -1,0 +1,479 @@
+/*-----scroll----*/
+/* Style the header: fixed position (always stay at the top) */
+#header {
+    padding: 60px 0px; /* Some padding */
+    color: black;
+    text-align: left; /* Centered text */
+    font-size: 40px; /* Big font size */
+    font-weight: bold;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 20%; /* Full width */
+    transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  }
+#navbar
+{
+    position : sticky;
+    top : 0;
+    z-index : 10;
+}
+.navbar-brand img
+{
+    height : 20px;
+    padding-left: 10px;
+}
+.navbar .logo a{
+    color:white;
+    font-size: 240%;
+    font-weight: 700;
+    padding-left: 2;
+    
+
+}
+
+.navbar-nav li
+{
+    padding:0 10px;
+}
+.navbar-nav li
+{
+    float: right;
+    text-align: left;
+}
+.nav-link:hover {
+    background-color:crimson!important;
+    box-shadow: transparent;
+    box-sizing: unset;
+    box-decoration-break:slice;
+    background-origin: padding-box;
+    background-origin: border-box;
+    border-width:1px;
+
+}
+  
+  
+
+.navbar
+{
+    background: rgb(65, 62, 62);
+}
+.navbar-toggler
+{
+    border:crimson!important;
+}
+.nav-link
+{
+    color:white!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.bold
+{
+    font-size: 300;
+    font-weight: 600;
+}
+#stack h5
+{
+    font-size: 200;
+    color: crimson;
+}
+.navbar .logo a span{
+    color: crimson;
+
+}
+/*----scroll down----*/
+
+/*----SLIDER----*/
+#slider
+{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption
+{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+.carousel-caption h4
+{
+    color: ivory;
+    font-size:55px;
+    font-style: initial;
+}
+.carousel-caption h5
+{
+    color: ivory;
+    font-size:45px;
+    font-style:initial;
+}
+
+/*----about---*/
+#about .title
+{
+    position: relative;
+    text-align:center;
+    font-family: 'ubuntu',sans-serif;
+    padding-top:70px;
+    padding-left: 450px;
+    font-weight:500 ;
+    margin-bottom:100px;
+    padding-bottom: 40px;
+    color:#555;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 36%;
+    width: 140px;
+    height: 3px;
+    background: #111;
+    transform: translateX();
+}
+.about .title::after{
+    content: "who i am";
+    font-size: 20px;
+    color: crimson;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    padding: 7px;
+    position: absolute;
+    background: #fff;
+    transform: translateX();
+}
+.about-content
+{
+    text-align: center;
+    padding-top: 20px;
+}
+/*------services----*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align:center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#services h1
+{
+    text-align:center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#services h1::after
+{
+    content: '';
+    background-color: #efefef;
+    display: flex;
+    height: 3px;
+    width:170px;
+    margin: 20px auto 5px;
+
+}
+.services
+{
+    margin-top: 30px;
+
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80;
+    width: 80px;
+    border: 2px solid #fff;
+    border-radius: 70%;
+
+
+}
+#services
+{
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ccc;
+}
+.services .col-md-3:hover{
+    background: crimson;
+    cursor:pointer;
+    transition: 0.7s;
+}
+/*...percentage bar..*/
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px
+}
+
+.progress {
+    height: 20px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: -30px;
+    right: -25px
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+}
+
+h1 {
+    text-align: center
+}
+
+body {
+    background: linear-gradient(to right,rgb(65, 62, 62),white)
+}
+#percentage
+{
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#percentage h1
+{
+    text-align:center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#percentage h1
+{
+    text-align:center;
+    color: #efefef !important;
+    padding-bottom: 10px;
+}
+#percentage h1::after
+{
+    content: '';
+    background-color: #efefef;
+    display: flex;
+    height: 3px;
+    width: 300px;
+    margin: 20px auto 5px;
+
+}
+/*---about meee---*/
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /* Typography Declarations */
+    color: black;
+    font-size: 1em;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://images.unsplash.com/photo-1498079022511-d15614cb1c02?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+}
+
+.masthead-intro {
+    /* Layout Declarations */
+    margin-bottom: 0.1em;
+    /* Typography Declarations */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 2em;
+}
+
+.masthead-heading {
+    /* Layout Declarations */
+    color: #F1C863;
+    margin-top: -0.2em;
+    /* Typography Declarations */
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+.introduction-section > p,
+.location-section > p,
+.questions-section,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.questions-section > h2 {
+    
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* Layout */
+    margin: 2em 0 1em 0;
+}
+
+section > h1 {
+    margin-top: 2em;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-image: url('https://images.unsplash.com/photo-1498079022511-d15614cb1c02?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1em #FFCF33;
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+   background-attachment: fixed;
+   padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.masthead-intro {
+  margin-bottom: 0.1em;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 2em;
+}
+
+.masthead-heading {
+  margin-top: -0.2em;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.introduction > p,
+.location > p,
+.content-footer > p {
+    /* Typography Declarations */
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+h2 {
+    /* Typography Declarations */
+    font-family: "Lucida Console", "Courier New", monospace;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduction-section,
+.location-section,
+.questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.content-footer {
+  margin: 50px 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: transparent;
+  text-decoration: none;
+}
+.social > li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.content-footer > p {
+  color: crimson;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #F1C863;
+}
+  
+@media only screen and (max-width: 500px) {
+    .masthead {
+        padding: 3em 0;
+    }
+    .masthead-heading {
+        font-size: 3em;
+    }
+    .content-footer {
+        padding: 2em 2.5em;
+  }
+}
+.questions-section
+{
+    color: #fff;
+}
+.introduction-section
+{
+    color: #fff;
+}
+.location-section
+{
+    color: #fff;
+}
+/*---end--*/
+
+/* HTML Set up */
